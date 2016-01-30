@@ -1,0 +1,28 @@
+<?php
+//creates employee class {
+//properties
+public $isAlive = true;
+public $firstname;
+public $middlename;
+public $lastname;
+public $gender;
+public $age;
+//assign values
+public function _construct($firstname, $middlename, $lastname, $email, $gender, $age) {
+$this->firstname = $firstname;
+$this->middlename = $middlename;
+$this->lastname = $lastname;
+$this->email = $email;
+$this->gender = $gender;
+$this->age = $age;
+}
+//creating method function to object
+public function greeting(){
+  return "Hello, my name is " .$this->firstname. "" .$this->lastname .". Nice to meet you!";
+    }
+  }
+  //creating a new person called "Web Developer", who is 36 years old
+  $me=new Employee('Web','Developer',36);
+  //printing out, what the greeting method returns
+  echo $me->greeting();
+  ?>
